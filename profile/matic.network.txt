@@ -1,0 +1,50 @@
+;;
+;; Domain:     matic.network.
+;; Exported:   2026-05-28 13:52:27
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+matic.network	3600	IN	SOA	cartman.ns.cloudflare.com. dns.cloudflare.com. 2053164294 10000 2400 604800 3600
+
+;; NS Records
+matic.network.	86400	IN	NS	cartman.ns.cloudflare.com.
+matic.network.	86400	IN	NS	paislee.ns.cloudflare.com.
+
+;; A Records
+akhilsmokie7.matic.network.	1	IN	A	192.0.2.1 ; cf_tags=cf-proxied:true
+
+;; MX Records
+matic.network.	1	IN	MX	5 alt2.aspmx.l.google.com.
+matic.network.	1	IN	MX	5 alt1.aspmx.l.google.com.
+matic.network.	1	IN	MX	10 aspmx3.googlemail.com.
+matic.network.	1	IN	MX	10 aspmx2.googlemail.com.
+matic.network.	1	IN	MX	1 aspmx.l.google.com.
+
+;; TXT Records
+_dmarc.matic.network.	1	IN	TXT	"v=DMARC1; p=reject; rua=mailto:dmarc@polygon.technology"
+google._domainkey.matic.network.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkRf3G0C7r/1JCS33wp4myx+kOrCDMZ2oyJwIYscL/9pNhWbXpnF2+VMlewDbjnrA0KdFIkuSEoHsMFj0RUxnxUVts76mlPglUMFKJZSCdc5SWO1PBFyfYxOIakMJ43RWrOd/jUkW1Wh+PVFAXMuuO7ZR01rmYnI1HvC01bHaedifQpgYB3Er5iY3Meyc0XY0M" "lVpdLPdGymfx85hxFrhl+YRGGgRs/2Cydrfj0AqcMoQlluKMP0H/7eBv3ZfY8XRDD3Ci74zS9MbxXBV+WmbInLmiYyI5KuT61TILhuaB0Ii0L3poeHqN7Y9/Nx5NEdqnV4GozAUElZLcUm8MhK88QIDAQAB"
+matic.network.	1	IN	TXT	"v=spf1 include:_spf.google.com -all"
+matic.network.	1	IN	TXT	"google-site-verification=T9HZYVoosPZHGPbm7uXmCY9MUcwm6lCr463WDXWsrGQ"
+matic.network.	1	IN	TXT	"docusign=f92db8b9-95e2-4973-a6cc-918f84454eef"
+matic.network.	1	IN	TXT	"ZOOM_verify_PjDKdxh8OJgCZctSkBCCin"
+matic.network.	1	IN	TXT	"Sendinblue-code:90265e196253ad1b3461f620b11158ae"
